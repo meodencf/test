@@ -39,13 +39,13 @@ public class QuanLy {
 
     public void menuSuaDoi() {
         System.out.println("-----------------------------------------");
-        System.out.println("1. Sửa thông tin Camerapolaroid");
-        System.out.println("2. Xóa Camerapolaroid");
-        System.out.println("3. Sửa thông tin cameraProsumer");
-        System.out.println("4. Xóa cameraProsumer");
-        System.out.println("5. Sửa Hoa don");
-        System.out.println("6. Thêm hoa don");
-        System.out.println("7. Xóa cameraProsumer");
+        System.out.println("1. Sua thong tin Camerapolaroid");
+        System.out.println("2. Xoa Camerapolaroid");
+        System.out.println("3. Sua thong tin cameraProsumer");
+        System.out.println("4. Xoa cameraProsumer");
+        System.out.println("5. Sua Hoa don");
+        System.out.println("6. Them hoa don");
+        System.out.println("7. Xoa cameraProsumer");
         System.out.println("----------- Chọn số 0 để thoát ----------");
     }
 
@@ -114,6 +114,7 @@ public class QuanLy {
                     xoaHoadon(MaHoadon, Macamera);
                     break;
                 }
+                             
                 default:
                     break;
             }
@@ -278,6 +279,18 @@ public class QuanLy {
             ex.printStackTrace();
         }
     }
+    public void timKiemCamera(String ten) {
+    System.out.print("--------------------------- ");  
+    for (camera cx : listcamera) {
+        if (cx.getTencamera().equals(ten)) {
+            cx.xuat();
+            System.out.println("Da tim thay thong tin camera " + ten);
+            return;
+        }
+    }
+        System.out.println("Khong tim thay camera " + ten);
+    }
+
 
     public void SapXepTheoSoLuong() {
         Collections.sort(listHoadon, new SapXepTheoSoLuong());
@@ -291,10 +304,11 @@ public class QuanLy {
         System.out.println("2. Nhập danh sách cameraProsumer ");
         System.out.println("3. hien thi danh sach camerapolaroid");
         System.out.println("4. hien thi danh sach cameraProsumer");
-        System.out.println("5. Cchinh sua thong tin (Camerapolaroid, Hoadon,cameraProsumer)");
+        System.out.println("5. Chinh sua thong tin (Camerapolaroid, Hoadon,cameraProsumer)");
         System.out.println("6. Luu file da nhap");
         System.out.println("7. doc file da luu ");
         System.out.println("8. Sap xep so luong camera tang dan ( Sau khi chay chuc nang 8");
+        System.out.println("9. tim camera");
         System.out.println("-----nhap 0 de thoat chuong trinh!-----");
     }
 

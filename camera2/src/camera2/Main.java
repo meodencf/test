@@ -62,6 +62,13 @@ public class Main {
                     a.SapXepTheoSoLuong();
                     break;
                 }
+                case 9: {
+                    System.out.println("nhap camera can tim kiem");
+                    sc.nextLine();
+                    String ten = sc.nextLine();
+                    a.timKiemCamera(ten);
+                    break;
+                }
                 default:
                     break;
             }
