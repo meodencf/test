@@ -59,7 +59,7 @@ public class QuanLy {
             switch (n) {
                 case 1: {
                     String Macamera;
-                    System.out.print("Nhập SBD của thí sinh cần sửa: ");
+                    System.out.print("Nhap Macamera cua Camerapolaroid can sua: ");
                     sc.nextLine();
                     Macamera = sc.nextLine();
                     Suacamerapolaroid(Macamera);
@@ -67,7 +67,7 @@ public class QuanLy {
                 }
                 case 2: {
                     String Macamera;
-                    System.out.print("Nhập SBD của thí sinh cần sửa: ");
+                    System.out.print("nhap Macamera cua Camerapolaroid can xoa: ");
                     sc.nextLine();
                     Macamera = sc.nextLine();
                     xoacamerapolaroid(Macamera);
@@ -75,7 +75,7 @@ public class QuanLy {
                 }
                 case 3: {
                     String Macamera;
-                    System.out.print("Nhập mã giám thị cần sửa thông tin: ");
+                    System.out.print("nhap Macamera cua cameraProsumer can sua: ");
                     sc.nextLine();
                     Macamera = sc.nextLine();
                     SuacameraProsumer(Macamera);
@@ -83,33 +83,33 @@ public class QuanLy {
                 }
                 case 4: {
                     String Macamera;
-                    System.out.print("Nhập mã giám thị cần sửa thông tin: ");
+                    System.out.print("nhap Macamera cua cameraProsumer can xoa: ");
                     sc.nextLine();
                     Macamera = sc.nextLine();
                     xoacameraProsumer(Macamera);
                     break;
                 }
                 case 5: {
-                    System.out.println("Nhập SBD của thí sinh: ");
+                    System.out.println("nhap Macamera cua Camerapolaroid: ");
                     sc.nextLine();
                     String Macamera = sc.nextLine();
-                    System.out.println("Nhập mã nguyện vọng");
+                    System.out.println("Nhap MaHoadon");
                     String MaHoadon = sc.nextLine();
                     suaHoadon(MaHoadon, Macamera);
                     break;
                 }
                 case 6: {
-                    System.out.println("Nhập SBD của thí sinh: ");
+                    System.out.println("Nhap Macamera cua Camerapolaroid: ");
                     sc.nextLine();
                     String Macamera = sc.nextLine();
                     themHoadon(Macamera);
                     break;
                 }
                 case 7: {
-                    System.out.println("Nhập SBD của thí sinh: ");
+                    System.out.println("Nhap Macamera cua Camerapolaroid: ");
                     sc.nextLine();
                     String Macamera = sc.nextLine();
-                    System.out.println("Nhập mã nguyện vọng");
+                    System.out.println("Nhap MaHoadon");
                     String MaHoadon = sc.nextLine();
                     xoaHoadon(MaHoadon, Macamera);
                     break;
@@ -289,13 +289,13 @@ public class QuanLy {
         System.out.println("------CHƯƠNG TRÌNH QUẢN LÝ KHO------");
         System.out.println("1. Nhập danh sách Camerapolaroid và Hoadon ");
         System.out.println("2. Nhập danh sách cameraProsumer ");
-        System.out.println("3. Hiển thị danh sách camerapolaroid");
-        System.out.println("4. Hiển thị danh sách cameraProsumer");
-        System.out.println("5. Chỉnh sửa thông tin (Camerapolaroid, Hoadon,cameraProsumer)");
-        System.out.println("6. Lưu file đã nhập");
-        System.out.println("7. Đọc dữ liệu từ file");
-        System.out.println("8. Sắp xếp danh sách trúng tuyển theo điểm thi giảm dần ( Sau khi chay chuc nang 8");
-        System.out.println("-----Nhấn phím 0 để thoát chương trình, xin cảmơn!-----");
+        System.out.println("3. hien thi danh sach camerapolaroid");
+        System.out.println("4. hien thi danh sach cameraProsumer");
+        System.out.println("5. Cchinh sua thong tin (Camerapolaroid, Hoadon,cameraProsumer)");
+        System.out.println("6. Luu file da nhap");
+        System.out.println("7. doc file da luu ");
+        System.out.println("8. Sap xep so luong camera tang dan ( Sau khi chay chuc nang 8");
+        System.out.println("-----nhap 0 de thoat chuong trinh!-----");
     }
 
 }
